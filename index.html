@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔍 GitHub Repo Browser</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📦 GitHub Repo Browser</h1>
+      <div class="tema-toggle">
+        <span>🌞</span>
+        <label class="switch">
+          <input type="checkbox" id="temaCheckbox">
+          <span class="slider round"></span>
+        </label>
+        <span>🌙</span>
+      </div>
+    </header>
+
+    <div class="busca">
+      <input type="text" id="usernameInput" placeholder="Nome de usuário do GitHub (ex: facebook)" autocomplete="off">
+      <button id="btnBuscar">🔎 Buscar</button>
+    </div>
+
+    <div id="loading" class="loading" style="display: none;">⏳ Carregando repositórios...</div>
+    <div id="erro" class="erro" style="display: none;"></div>
+
+    <div class="filtros-ordem" id="filtrosArea" style="display: none;">
+      <div class="filtro-linguagem">
+        <label>🗂️ Filtrar por linguagem:</label>
+        <select id="filtroLinguagem">
+          <option value="">Todas</option>
+        </select>
+      </div>
+      <div class="ordenacao">
+        <label>📊 Ordenar por:</label>
+        <button id="ordenarEstrelas" class="ordenar-btn">⭐ Estrelas (desc)</button>
+        <button id="ordenarNome" class="ordenar-btn">🔤 Nome (A-Z)</button>
+        <button id="ordenarAtualizado" class="ordenar-btn">🕒 Atualização recente</button>
+      </div>
+    </div>
+
+    <div id="infoUsuario" class="info-usuario" style="display: none;">
+      <img id="avatar" src="" alt="Avatar">
+      <div>
+        <h2 id="nomeUsuario"></h2>
+        <p id="bioUsuario"></p>
+        <span id="seguidores"></span> · <span id="reposPublicos"></span>
+      </div>
+    </div>
+
+    <div id="listaRepos" class="lista-repos"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
