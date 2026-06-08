@@ -2,7 +2,8 @@
 
 Uma aplicação web que consome a **API pública do GitHub** para buscar e explorar repositórios de qualquer usuário. Permite filtrar por linguagem, ordenar por estrelas, nome ou data de atualização, além de exibir informações do perfil.
 
-![Demonstração](https://via.placeholder.com/800x400?text=Adicione+uma+imagem+do+projeto)
+![Demonstração]<img width="2554" height="1160" alt="Captura de tela 2026-06-08 160156" src="https://github.com/user-attachments/assets/a221fbb8-5ceb-4610-ad96-a8fcdcdaaf62" />
+
 
 ## ✨ Funcionalidades
 
